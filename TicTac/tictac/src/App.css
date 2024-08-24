@@ -1,0 +1,12 @@
+.board-row{
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color:lightpink;
+}
+
+.board-container {
+  background-color:lightblue;
+  margin:60px;
+  
+}

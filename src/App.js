@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css';
+import React from 'react';
+import TodoItem from './components/TodoItem';
+import Header from './components/Header';
+import Button from './components/Button';
+import './style.css';
+import Counter from './components/counter';
+
+const App=()=>{
+    return (
+      <div className ="todo-container">
+        <Counter/>
+      <Header head="Todoie App"/>
+      <TodoItem text="Eat"/>
+      <TodoItem text="Code"/>
+      <TodoItem text="Sleep"/>
+      <TodoItem text="Repeat"/>
+      <Button/>
+      </div>
+    )
+};
 
 export default App;
